@@ -19,7 +19,7 @@ namespace PatternEye
 
         private void test()
         {
-            Tile t = new Tile(3, 1);
+            PTile t = new PTile(3, 1);
             t.sample(Color.Red, 1, 1);
             foreach (int i in new int[]{0,1,2})
             {

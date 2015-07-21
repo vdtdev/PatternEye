@@ -10,14 +10,14 @@ namespace PatternEye.Data
     /// <summary>
     /// Encapsulation of a rectangular region of pixels
     /// </summary>
-    public class Region
+    public class PRegion
     {  
         /// <summary>
         /// Region class constructor
         /// </summary>
         /// <param name="width">Region width</param>
         /// <param name="height">Region height</param>
-        public Region(int width,int height)
+        public PRegion(int width,int height)
         {
             
             this.Pixels = new RColor[width, height];

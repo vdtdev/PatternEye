@@ -7,9 +7,9 @@ namespace PatternEye.Data
 {
    
     /// <summary>
-    /// Encapsulation of a sample square of pixels, extending <see cref="PatternEye.Data.Region">Region</see>
+    /// Encapsulation of a sample square of pixels, extending <see cref="PatternEye.Data.PRegion">Region</see>
     /// </summary>
-    public class Tile:Region
+    public class PTile:PRegion
     {
 
         private int edge_size = 1;
@@ -18,7 +18,7 @@ namespace PatternEye.Data
         /// </summary>
         /// <param name="size">Width and height (in pixels) of region</param>
         /// <param name="edge">'Edge' radius size</param>
-        public Tile(int size,int edge):base(size,size)
+        public PTile(int size,int edge):base(size,size)
         {
             this.edge_size = 1;
         }

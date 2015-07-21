@@ -3,3 +3,6 @@ PatternEye/obj/
 PatternEyeLib/obj/
 PatternEyeLib/bin/
 PatternEye.suo
+TestResults/
+PatternEyeTests/obj/
+PatternEyeTests/bin/
