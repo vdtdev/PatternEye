@@ -40,7 +40,7 @@ namespace PatternEye.Common
         /// <returns>Converted Color</returns>
         public Color toColor()
         {
-            return Color.FromArgb(red, green, blue, alpha);
+            return Color.FromArgb(alpha, red, green, blue);
         }
     }
 

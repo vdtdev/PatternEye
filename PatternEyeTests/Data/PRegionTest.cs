@@ -99,14 +99,14 @@ namespace PatternEyeTests
         [TestMethod()]
         public void sampleTest1()
         {
-            int width = 0; // TODO: Initialize to an appropriate value
-            int height = 0; // TODO: Initialize to an appropriate value
+            int width = 3; // TODO: Initialize to an appropriate value
+            int height = 3; // TODO: Initialize to an appropriate value
             PRegion target = new PRegion(width, height); // TODO: Initialize to an appropriate value
-            RColor v = new RColor(); // TODO: Initialize to an appropriate value
+            RColor v = new RColor(128,25,4,10); // TODO: Initialize to an appropriate value
             int c = 0; // TODO: Initialize to an appropriate value
             int r = 0; // TODO: Initialize to an appropriate value
             target.sample(v, c, r);
-            Assert.Inconclusive("A method that does not return a value cannot be verified.");
+            Assert.AreEqual(target.sample(c, r), v);
         }
 
         /// <summary>
@@ -115,16 +115,16 @@ namespace PatternEyeTests
         [TestMethod()]
         public void sampleTest2()
         {
-            int width = 0; // TODO: Initialize to an appropriate value
-            int height = 0; // TODO: Initialize to an appropriate value
+            int width = 3; // TODO: Initialize to an appropriate value
+            int height = 3; // TODO: Initialize to an appropriate value
             PRegion target = new PRegion(width, height); // TODO: Initialize to an appropriate value
             int c = 0; // TODO: Initialize to an appropriate value
             int r = 0; // TODO: Initialize to an appropriate value
-            RColor expected = new RColor(); // TODO: Initialize to an appropriate value
+            RColor expected = new RColor(5,10,15,20); // TODO: Initialize to an appropriate value
+            target.sample(expected, c, r);
             RColor actual;
             actual = target.sample(c, r);
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Verify the correctness of this test method.");
         }
 
         /// <summary>
