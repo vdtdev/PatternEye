@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using PatternEye;
+using PatternEye.Data;
 namespace PatternEye
 {
     public partial class Demo : Form
